@@ -25,4 +25,14 @@ class tempUnitConverterTest {
         float expected = -253;
         assertEquals(expected,actual.getValue(),"correct");
     }
+    @Test
+    void convertFromKelvinToFahrenheit(){
+        //given 20 degrees Kelvin
+        Kelvin input =  new Kelvin(20);
+        //convert it to fahrenheit
+        Fahrenheit actual = new Fahrenheit(input.toFahrenheit());
+        //the result should be -423
+        float expected = -423;
+        assertEquals(expected,actual.getValue(),"correct");
+    }
 }
