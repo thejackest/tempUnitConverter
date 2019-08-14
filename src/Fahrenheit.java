@@ -4,4 +4,8 @@ public class Fahrenheit extends tempUnitConverter
         super (value);
     }
 
+    @Override
+    public float toKelvin(){
+        return (float)5/9 * (this.getValue() - 32) + 273;
+    }
 }

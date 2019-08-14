@@ -60,12 +60,12 @@ class tempUnitConverterTest {
 
     @Test
     void convertFromFahrenheitToKelvin(){
-        //given 120 degrees Celsius
-        Fahrenheit input =  new Fahrenheit(100);
+        //given 59 degrees fahrenheit
+        Fahrenheit input =  new Fahrenheit(59);
         //convert it to Kelvin
         Kelvin actual = new Kelvin(input.toKelvin());
-        //the result should be 311
-        float expected = 311;
+        //the result should be 288
+        float expected = 288;
         assertEquals(expected,actual.getValue(),"correct");
     }
 }
