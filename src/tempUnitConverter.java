@@ -8,4 +8,8 @@ public class tempUnitConverter {
     public float getValue() {
         return value;
     }
+
+    public float toKelvin(){return value;}
+    public float toCelsius(){return value;}
+    public float toFahrenheit(){return value;}
 }
