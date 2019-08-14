@@ -5,18 +5,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class tempUnitConverterTest {
 
     @Test
-    void getValue() {
+    void getValueTest() {
         tempUnitConverter unit = new tempUnitConverter(0);
         assertEquals(0,unit.getValue());
     }
     @Test
-    void getKelvinValue() {
+    void getKelvinValueTest() {
         Kelvin unit = new Kelvin(30);
         assertEquals(30,unit.getValue());
     }
 
     @Test
-    void convertFromKelvinToCelsius(){
+    void convertFromKelvinToCelsiusTest(){
         //given 20 degrees Kelvin
         Kelvin input =  new Kelvin(20);
         //convert it to Celsius
@@ -26,7 +26,7 @@ class tempUnitConverterTest {
         assertEquals(expected,actual.getValue(),"correct");
     }
     @Test
-    void convertFromKelvinToFahrenheit(){
+    void convertFromKelvinToFahrenheitTest(){
         //given 20 degrees Kelvin
         Kelvin input =  new Kelvin(20);
         //convert it to fahrenheit
@@ -37,7 +37,7 @@ class tempUnitConverterTest {
     }
 
     @Test
-    void convertFromCelsiusToKelvin(){
+    void convertFromCelsiusToKelvinTest(){
         //given 120 degrees Celsius
         Celsius input =  new Celsius(120);
         //convert it to Kelvin
@@ -48,7 +48,7 @@ class tempUnitConverterTest {
     }
 
     @Test
-    void convertFromCelsiusToFahrenheit(){
+    void convertFromCelsiusToFahrenheitTest(){
         //given 120 degrees Celsius
         Celsius input =  new Celsius(120);
         //convert it to fahrenheit
@@ -59,7 +59,7 @@ class tempUnitConverterTest {
     }
 
     @Test
-    void convertFromFahrenheitToKelvin(){
+    void convertFromFahrenheitToKelvinTest(){
         //given 59 degrees fahrenheit
         Fahrenheit input =  new Fahrenheit(59);
         //convert it to Kelvin
@@ -69,7 +69,7 @@ class tempUnitConverterTest {
         assertEquals(expected,actual.getValue(),"correct");
     }
     @Test
-    void convertFromFahrenheitToCelsius(){
+    void convertFromFahrenheitToCelsiusTest(){
         //given 50 degrees fahrenheit
         Fahrenheit input =  new Fahrenheit(50);
         //convert it to Celsius
