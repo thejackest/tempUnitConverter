@@ -3,6 +3,7 @@ public class Kelvin extends tempUnitConverter {
         super(value);
     }
 
+    //these two methods will convert kelvin into two other different units
     @Override
     public float toCelsius(){
         return this.getValue() - 273;
@@ -10,6 +11,6 @@ public class Kelvin extends tempUnitConverter {
 
     @Override
     public float toFahrenheit(){
-        return (float)9/5*(this.getValue() - 273) + 32;
+        return (float)9/5 * (this.getValue() - 273) + 32;
     }
 }
