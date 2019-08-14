@@ -4,4 +4,8 @@ public class Celsius extends tempUnitConverter
         super (value);
     }
 
+    @Override
+    public float toKelvin(){
+        return this.getValue() + 273;
+    }
 }
