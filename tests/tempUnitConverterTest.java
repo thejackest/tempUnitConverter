@@ -70,12 +70,12 @@ class tempUnitConverterTest {
     }
     @Test
     void convertFromFahrenheitToCelsius(){
-        //given 59 degrees fahrenheit
-        Fahrenheit input =  new Fahrenheit(59);
+        //given 50 degrees fahrenheit
+        Fahrenheit input =  new Fahrenheit(50);
         //convert it to Celsius
         Celsius actual = new Celsius(input.toCelsius());
-        //the result should be 15
-        float expected = 15;
+        //the result should be 10
+        float expected = 10;
         assertEquals(expected,actual.getValue(),"correct");
     }
 }
