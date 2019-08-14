@@ -31,8 +31,19 @@ class tempUnitConverterTest {
         Kelvin input =  new Kelvin(20);
         //convert it to fahrenheit
         Fahrenheit actual = new Fahrenheit(input.toFahrenheit());
-        //the result should be -423
-        float expected = -423;
+        //the result should be -423.4
+        float expected = (float)-423.4;
+        assertEquals(expected,actual.getValue(),"correct");
+    }
+
+    @Test
+    void convertFromCelsiusToKelvin(){
+        //given 20 degrees Celsius
+        Celsius input =  new Celsius(120);
+        //convert it to Celsius
+       Kelvin actual = new Kelvin(input.toKelvin());
+        //the result should be 393
+        float expected = 393;
         assertEquals(expected,actual.getValue(),"correct");
     }
 }
